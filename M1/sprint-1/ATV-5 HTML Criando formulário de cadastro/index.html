@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATV Html formulário de cadastro</title>
+</head>
+<body>
+    <h1>Cadastre-se</h1>
+    <section> <!-- seção para cadastro-->
+        <form>
+            <div>
+                <label for="nome">Nome</label> 
+                <input type="text" 
+                id="nome" 
+                name="nome" 
+                placeholder="Digite seu nome aqui...">
+            </div>
+            
+            <div>
+                <label for="email">E-mail</label>
+                <input type="text" 
+                id="email" 
+                name="email" 
+                placeholder="Digite seu e-mail aqui...">
+            </div>
+
+            <div>
+                <label for="descricao">Descrição</label>
+                <textarea  
+                id="descricao" 
+                name="descricao" 
+                cols="20" 
+                rows="5"
+                placeholder="Fale mais sobre você aqui..."
+                ></textarea>
+            </div>
+
+            <div>
+                <label for="modulo">Módulo</label>
+                <select  id="modulo" name="modulo">
+                    <option value="">Selecione seu módulo</option>
+                    <option value="m1">M1</option>
+                    <option value="m2">M2</option>
+                    <option value="m3">M3</option>
+                    <option value="m4">M4</option>
+                    <option value="m5">M5</option>
+                    <option value="m6">M6</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" 
+                id="senha" 
+                name="senha"
+                placeholder="Digite sua senha aqui...">
+            </div>
+
+            <div>
+                <label for="confirmasenha">Confirmar senha</label>
+                <input type="password"
+                id="confirmasenha"
+                name="confirmasenha"
+                placeholder="Digite sua senha novamente aqui...">
+            </div>
+            
+            <div>
+                <p>Gostaria de receber novidades em seu e-mail?</p>
+                <label for="sim">Sim</label>
+                <input type="radio" id="sim" name="novidades" value="Sim">
+
+                <label for="nao">Não</label>
+                <input type="radio" id="nao" name="novidades" value="Não">
+            </div>
+                <button type="submit">Cadastrar</button>
+        </form>
+
+    </section>
+    
+</body>
+</html>
